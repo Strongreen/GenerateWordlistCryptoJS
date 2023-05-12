@@ -1,0 +1,743 @@
+{
+	"info": {
+		"_postman_id": "f6845995-7bbe-4d03-96ce-e05a8474dd0e",
+		"name": "GenerateWordlistCryptoJS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5662943"
+	},
+	"item": [
+		{
+			"name": "AES",
+			"item": [
+				{
+					"name": "Wordlist AES encrypt",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"pathIn\": \"./Wordlists/wordlistCPFUsuarios.csv\",\n    \"pathOut\": \"./Wordlists/wordlistCryptCPFUsuarios.csv\",\n    \"secretKey\": \"secretKey\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/AES/encrypting",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"AES",
+								"encrypting"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Wordlist AES decrypt",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"pathIn\": \"./Wordlists/wordlistCryptCPFUsuarios.csv\",\n    \"pathOut\": \"./Wordlists/wordlistCPFDecryptUsuarios.csv\",\n    \"secretKey\": \"secretKey\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/AES/decrypting",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"AES",
+								"decrypting"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DES",
+			"item": [
+				{
+					"name": "Wordlist DES encrypt",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"pathIn\": \"./Wordlists/wordlistCPFUsuarios.csv\",\n    \"pathOut\": \"./Wordlists/wordlistCryptCPFUsuarios.csv\",\n    \"secretKey\": \"secretKey\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/DES/encrypting",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"DES",
+								"encrypting"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Wordlist DES decrypt",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"pathIn\": \"./Wordlists/wordlistCryptCPFUsuarios.csv\",\n    \"pathOut\": \"./Wordlists/wordlistCPFDecryptUsuarios.csv\",\n    \"secretKey\": \"secretKey\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/DES/decrypting",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"DES",
+								"decrypting"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MD5",
+			"item": [
+				{
+					"name": "Wordlist MD5 encrypt",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"pathIn\": \"./Wordlists/wordlistCPFUsuarios.csv\",\n    \"pathOut\": \"./Wordlists/wordlistCryptCPFUsuarios.csv\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/MD5/encrypting",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"MD5",
+								"encrypting"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SHA-1",
+			"item": [
+				{
+					"name": "Wordlist SHA-1 encrypt",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"pathIn\": \"./Wordlists/wordlistCPFUsuarios.csv\",\n    \"pathOut\": \"./Wordlists/wordlistCryptCPFUsuarios.csv\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/SHA1/encrypting",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"SHA1",
+								"encrypting"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SHA-2",
+			"item": [
+				{
+					"name": "Wordlist SHA-256 encrypt",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"pathIn\": \"./Wordlists/wordlistCPFUsuarios.csv\",\n    \"pathOut\": \"./Wordlists/wordlistCryptCPFUsuarios.csv\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/SHA256/encrypting",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"SHA256",
+								"encrypting"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Wordlist SHA-512 encrypt",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"pathIn\": \"./Wordlists/wordlistCPFUsuarios.csv\",\n    \"pathOut\": \"./Wordlists/wordlistCryptCPFUsuarios.csv\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/SHA512/encrypting",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"SHA512",
+								"encrypting"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SHA-3",
+			"item": [
+				{
+					"name": "Wordlist SHA-3 encrypt",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"pathIn\": \"./Wordlists/wordlistCPFUsuarios.csv\",\n    \"pathOut\": \"./Wordlists/wordlistCryptCPFUsuarios.csv\",\n    \"outputLength\": \"224 or 256 or 384 or 512 bits\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/SHA3/encrypting",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"SHA3",
+								"encrypting"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TripleDES",
+			"item": [
+				{
+					"name": "Wordlist TripleDES encrypt",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"pathIn\": \"./Wordlists/wordlistCPFUsuarios.csv\",\n    \"pathOut\": \"./Wordlists/wordlistCryptCPFUsuarios.csv\",\n    \"secretKey\": \"secretKey\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/TripleDES/encrypting",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"TripleDES",
+								"encrypting"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Wordlist TripleDES decrypt",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"pathIn\": \"./Wordlists/wordlistCPFUsuarios.csv\",\n    \"pathOut\": \"./Wordlists/wordlistCryptCPFUsuarios.csv\",\n    \"secretKey\": \"secretKey\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/TripleDES/decrypting",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"TripleDES",
+								"decrypting"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Rabbit",
+			"item": [
+				{
+					"name": "Wordlist Rabbit encrypt",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"pathIn\": \"./Wordlists/wordlistCPFUsuarios.csv\",\n    \"pathOut\": \"./Wordlists/wordlistCryptCPFUsuarios.csv\",\n    \"secretKey\": \"secretKey\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/Rabbit/encrypting",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"Rabbit",
+								"encrypting"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Wordlist Rabbit decrypt",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"pathIn\": \"./Wordlists/wordlistCPFUsuarios.csv\",\n    \"pathOut\": \"./Wordlists/wordlistCryptCPFUsuarios.csv\",\n    \"secretKey\": \"secretKey\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/Rabbit/decrypting",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"Rabbit",
+								"decrypting"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Encoding",
+			"item": [
+				{
+					"name": "Wordlist Base64 encode",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"pathIn\": \"./Wordlists/wordlistCPFUsuarios.csv\",\n    \"pathOut\": \"./Wordlists/wordlistCryptCPFUsuarios.csv\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/Base64/encoding",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"Base64",
+								"encoding"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Wordlist Hex encode",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"pathIn\": \"./Wordlists/wordlistCPFUsuarios.csv\",\n    \"pathOut\": \"./Wordlists/wordlistCryptCPFUsuarios.csv\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/HEX/encoding",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"HEX",
+								"encoding"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Salt",
+			"item": [
+				{
+					"name": "Wordlist Salt",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"pathIn\": \"./Wordlists/wordlistCPFUsuarios.csv\",\n    \"pathOut\": \"./Wordlists/wordlistCryptCPFUsuarios.csv\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/Salt/salting",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"Salt",
+								"salting"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "HMAC",
+			"item": [
+				{
+					"name": "Wordlist HMAC MD5 encrypt",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"pathIn\": \"./Wordlists/wordlistCPFUsuarios.csv\",\n    \"pathOut\": \"./Wordlists/wordlistCryptCPFUsuarios.csv\",\n    \"secretKey\": \"secretKey\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/HMAC/MD5/encrypting",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"HMAC",
+								"MD5",
+								"encrypting"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Wordlist HMAC SHA-1 encrypt",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"pathIn\": \"./Wordlists/wordlistCPFUsuarios.csv\",\n    \"pathOut\": \"./Wordlists/wordlistCryptCPFUsuarios.csv\",\n    \"secretKey\": \"secretKey\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/HMAC/SHA1/encrypting",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"HMAC",
+								"SHA1",
+								"encrypting"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Wordlist HMAC SHA256 encrypt",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"pathIn\": \"./Wordlists/wordlistCPFUsuarios.csv\",\n    \"pathOut\": \"./Wordlists/wordlistCryptCPFUsuarios.csv\",\n    \"secretKey\":\"secretKey\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/HMAC/SHA256/encrypting",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"HMAC",
+								"SHA256",
+								"encrypting"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Wordlist HMAC SHA512 encrypt",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"pathIn\": \"./Wordlists/wordlistCPFUsuarios.csv\",\n    \"pathOut\": \"./Wordlists/wordlistCryptCPFUsuarios.csv\",\n    \"secretKey\": \"secretKey\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/HMAC/SHA512/encrypting",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"HMAC",
+								"SHA512",
+								"encrypting"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get All info for Wordlist",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"pathOut\": \"./Wordlists/wordlistCryptCPFUsuarios.csv\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/getAllFile",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"getAllFile"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
