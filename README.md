@@ -56,7 +56,7 @@ npm install
 ```
 
 ### 3. Configure a biblioteca CryptoJS
-Certifique-se de seguir as etapas de configuração da biblioteca CryptoJS, conforme descrito na ([documentação oficial](https://cryptojs.gitbook.io/docs/)).
+Certifique-se de seguir as etapas de configuração da biblioteca CryptoJS, conforme descrito na [documentação oficial](https://cryptojs.gitbook.io/docs/).
 
 
 ### 4. Execute a API
