@@ -63,7 +63,7 @@ Certifique-se de seguir as etapas de configuração da biblioteca CryptoJS, conf
 Inicie a API executando o seguinte comando:
 
 ```
-npm start
+node app.js
 ```
 A API estará disponível em http://localhost:3000 ou http://127.0.0.1:3000
 
