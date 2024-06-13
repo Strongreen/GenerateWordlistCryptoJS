@@ -1,9 +1,8 @@
 {
 	"info": {
-		"_postman_id": "f6845995-7bbe-4d03-96ce-e05a8474dd0e",
+		"_postman_id": "8217f62c-47ef-403a-8abd-02615dac43d5",
 		"name": "GenerateWordlistCryptoJS",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "5662943"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
@@ -24,15 +23,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:3000/AES/encrypting",
-							"protocol": "http",
+							"raw": "{{ENDPOINT}}/AES/encrypting",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{ENDPOINT}}"
 							],
-							"port": "3000",
 							"path": [
 								"AES",
 								"encrypting"
@@ -56,15 +50,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:3000/AES/decrypting",
-							"protocol": "http",
+							"raw": "{{ENDPOINT}}/AES/decrypting",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{ENDPOINT}}"
 							],
-							"port": "3000",
 							"path": [
 								"AES",
 								"decrypting"
@@ -93,15 +82,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:3000/DES/encrypting",
-							"protocol": "http",
+							"raw": "{{ENDPOINT}}/DES/encrypting",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{ENDPOINT}}"
 							],
-							"port": "3000",
 							"path": [
 								"DES",
 								"encrypting"
@@ -125,15 +109,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:3000/DES/decrypting",
-							"protocol": "http",
+							"raw": "{{ENDPOINT}}/DES/decrypting",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{ENDPOINT}}"
 							],
-							"port": "3000",
 							"path": [
 								"DES",
 								"decrypting"
@@ -162,15 +141,74 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:3000/MD5/encrypting",
-							"protocol": "http",
+							"raw": "{{ENDPOINT}}/MD5/encrypting",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{ENDPOINT}}"
 							],
-							"port": "3000",
+							"path": [
+								"MD5",
+								"encrypting"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Base64",
+			"item": [
+				{
+					"name": "Wordlist Base64 encrypt",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"pathIn\": \"./Wordlists/wordlistCPFUsuarios.csv\",\n    \"pathOut\": \"./Wordlists/wordlistCryptCPFUsuarios.csv\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ENDPOINT}}/MD5/encrypting",
+							"host": [
+								"{{ENDPOINT}}"
+							],
+							"path": [
+								"MD5",
+								"encrypting"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Hex",
+			"item": [
+				{
+					"name": "Wordlist Hex encrypt",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"pathIn\": \"./Wordlists/wordlistCPFUsuarios.csv\",\n    \"pathOut\": \"./Wordlists/wordlistCryptCPFUsuarios.csv\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ENDPOINT}}/MD5/encrypting",
+							"host": [
+								"{{ENDPOINT}}"
+							],
 							"path": [
 								"MD5",
 								"encrypting"
@@ -199,15 +237,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:3000/SHA1/encrypting",
-							"protocol": "http",
+							"raw": "{{ENDPOINT}}/SHA1/encrypting",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{ENDPOINT}}"
 							],
-							"port": "3000",
 							"path": [
 								"SHA1",
 								"encrypting"
@@ -236,15 +269,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:3000/SHA256/encrypting",
-							"protocol": "http",
+							"raw": "{{ENDPOINT}}/SHA256/encrypting",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{ENDPOINT}}"
 							],
-							"port": "3000",
 							"path": [
 								"SHA256",
 								"encrypting"
@@ -268,15 +296,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:3000/SHA512/encrypting",
-							"protocol": "http",
+							"raw": "{{ENDPOINT}}/SHA512/encrypting",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{ENDPOINT}}"
 							],
-							"port": "3000",
 							"path": [
 								"SHA512",
 								"encrypting"
@@ -305,15 +328,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:3000/SHA3/encrypting",
-							"protocol": "http",
+							"raw": "{{ENDPOINT}}/SHA3/encrypting",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{ENDPOINT}}"
 							],
-							"port": "3000",
 							"path": [
 								"SHA3",
 								"encrypting"
@@ -342,15 +360,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:3000/TripleDES/encrypting",
-							"protocol": "http",
+							"raw": "{{ENDPOINT}}/TripleDES/encrypting",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{ENDPOINT}}"
 							],
-							"port": "3000",
 							"path": [
 								"TripleDES",
 								"encrypting"
@@ -374,15 +387,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:3000/TripleDES/decrypting",
-							"protocol": "http",
+							"raw": "{{ENDPOINT}}/TripleDES/decrypting",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{ENDPOINT}}"
 							],
-							"port": "3000",
 							"path": [
 								"TripleDES",
 								"decrypting"
@@ -411,15 +419,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:3000/Rabbit/encrypting",
-							"protocol": "http",
+							"raw": "{{ENDPOINT}}/Rabbit/encrypting",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{ENDPOINT}}"
 							],
-							"port": "3000",
 							"path": [
 								"Rabbit",
 								"encrypting"
@@ -443,15 +446,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:3000/Rabbit/decrypting",
-							"protocol": "http",
+							"raw": "{{ENDPOINT}}/Rabbit/decrypting",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{ENDPOINT}}"
 							],
-							"port": "3000",
 							"path": [
 								"Rabbit",
 								"decrypting"
@@ -480,15 +478,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:3000/Base64/encoding",
-							"protocol": "http",
+							"raw": "{{ENDPOINT}}/Base64/encoding",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{ENDPOINT}}"
 							],
-							"port": "3000",
 							"path": [
 								"Base64",
 								"encoding"
@@ -512,15 +505,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:3000/HEX/encoding",
-							"protocol": "http",
+							"raw": "{{ENDPOINT}}/HEX/encoding",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{ENDPOINT}}"
 							],
-							"port": "3000",
 							"path": [
 								"HEX",
 								"encoding"
@@ -549,15 +537,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:3000/Salt/salting",
-							"protocol": "http",
+							"raw": "{{ENDPOINT}}/Salt/salting",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{ENDPOINT}}"
 							],
-							"port": "3000",
 							"path": [
 								"Salt",
 								"salting"
@@ -586,15 +569,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:3000/HMAC/MD5/encrypting",
-							"protocol": "http",
+							"raw": "{{ENDPOINT}}/HMAC/MD5/encrypting",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{ENDPOINT}}"
 							],
-							"port": "3000",
 							"path": [
 								"HMAC",
 								"MD5",
@@ -723,21 +701,43 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:3000/getAllFile",
-					"protocol": "http",
+					"raw": "{{ENDPOINT}}/getAllFile",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"{{ENDPOINT}}"
 					],
-					"port": "3000",
 					"path": [
 						"getAllFile"
 					]
 				}
 			},
 			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "ENDPOINT",
+			"value": "http://localhost:3000",
+			"type": "default"
 		}
 	]
 }
